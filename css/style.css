@@ -9703,3 +9703,9 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.hover-color:hover{
+  background-color: #F9A392;
+  color:black;
+  ;
+}
