@@ -143,30 +143,27 @@ function make_appoinmnet()
 
 }
 
-);
 function Send_Email()
 {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var date = document.getElementById("subject").value;
-    var time = document.getElementById("message").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
 
-    console.log("name:",name);
-    console.log("email:",email);
-    console.log("date:",date);
-    console.log("time:",time);
-    console.log("service",service);
+    var body = `Name: ${name}\n <br> Email: ${email}\n <br> Subject: ${subject}\n <br> Message: ${message}\n\n  <br> `;
 
-    if (name && email && date && time && service)
+
+    if (name && email && subject && message)
     {
-        var message = "Name: " + name + "\n" +
-              "Email: " + email + "\n" +
-              "Date: " + date + "\n" +
-              "Time: " + time + "\n" +
-              "Service: " + service;
-
-        var whatsappURL = "https://web.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
-        window.open(whatsappURL, '_blank');
+        Email.send({
+            SecureToken : "750c7b05-93eb-45ef-984d-4b6c8e1326fa",
+            To : 'Sankalpa.isurukala17@gmail.com',
+            From : 'Sankalpa.isurukala17@gmail.com',
+            Subject : "Client Feed-Back",
+            Body : body
+        }).then(
+          message => alert(message)
+        );
     }
     else
     {
