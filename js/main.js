@@ -150,7 +150,7 @@ function Send_Email()
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
 
-    var body = `Name: ${name}\n <br> Email: ${email}\n <br> Subject: ${subject}\n <br> Message: ${message}\n\n  <br> `;
+    var body = `Name: ${name}\n <br> Email: ${email}\n <br> Subject: ${subject}\n <br> Message: ${message}\n\n <br> `;
 
 
     if (name && email && subject && message)
@@ -162,7 +162,7 @@ function Send_Email()
             Subject : "Client Feed-Back",
             Body : body
         }).then(
-          message => alert(message)
+          message => alert("Email sent successfuly")
         );
     }
     else
