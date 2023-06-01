@@ -124,12 +124,37 @@ function make_appoinmnet()
     console.log("time:",time);
     console.log("service",service);
 
-    var whatspp_url = "https://wa.me/+94715852085?text="
-                        +"Name :"+ name +"%0a"
-                        +"email :"+ email +"%0a"
-                        +"date :"+ date +"%0a"
-                        +"time :"+ time +"%0a"
-                        +"service :"+ service ;
+    if (name && email && date && time && service)
+    {
+        var message = "Name: " + name + "\n" +
+              "Email: " + email + "\n" +
+              "Date: " + date + "\n" +
+              "Time: " + time + "\n" +
+              "Service: " + service;
 
-                        window.open(whatspp_url,'_blank').focus();
+        var whatsappURL = "https://web.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
+        window.open(whatsappURL, '_blank');
+
+        // if ('contacts' in navigator && 'ContactsManager' in window) {
+        //     var contact = {
+        //       name: [ABC],
+        //       phones: [{
+        //         value: +971565004506,
+        //         type: 'mobile'
+        //       }]
+        //     };
+      
+        //     navigator.contacts.select(['name', 'phones']).then(function(selection) {
+        //       if (selection.length === 0) {
+        //         navigator.contacts.create(contact).save();
+        //       }
+        //     });
+        //   }
+    }
+    else
+    {
+        alert("Please fill in all the required fields.");
+    }
+    
+
 }
