@@ -134,22 +134,6 @@ function make_appoinmnet()
 
         var whatsappURL = "https://web.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
         window.open(whatsappURL, '_blank');
-
-        // if ('contacts' in navigator && 'ContactsManager' in window) {
-        //     var contact = {
-        //       name: [ABC],
-        //       phones: [{
-        //         value: +971565004506,
-        //         type: 'mobile'
-        //       }]
-        //     };
-      
-        //     navigator.contacts.select(['name', 'phones']).then(function(selection) {
-        //       if (selection.length === 0) {
-        //         navigator.contacts.create(contact).save();
-        //       }
-        //     });
-        //   }
     }
     else
     {
@@ -158,3 +142,37 @@ function make_appoinmnet()
     
 
 }
+
+);
+function Send_Email()
+{
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var date = document.getElementById("subject").value;
+    var time = document.getElementById("message").value;
+
+    console.log("name:",name);
+    console.log("email:",email);
+    console.log("date:",date);
+    console.log("time:",time);
+    console.log("service",service);
+
+    if (name && email && date && time && service)
+    {
+        var message = "Name: " + name + "\n" +
+              "Email: " + email + "\n" +
+              "Date: " + date + "\n" +
+              "Time: " + time + "\n" +
+              "Service: " + service;
+
+        var whatsappURL = "https://web.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
+        window.open(whatsappURL, '_blank');
+    }
+    else
+    {
+        alert("Please fill in all the required fields.");
+    }
+    
+
+}
+
