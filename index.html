@@ -244,16 +244,16 @@
             <div class="col-lg-6 py-5">
                 <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
                     <h1 class="text-white text-center mb-4">Make Appointment</h1>
-                    <form>
+                    <form action="" method="">
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Your Name" required="required" />
+                                    <input type="text" id="name" class="form-control bg-transparent p-4" placeholder="" required="required" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Your Email" required="required" />
+                                    <input type="email" id="email" class="form-control bg-transparent p-4" placeholder="Your Email" required="required" />
                                 </div>
                             </div>
                         </div>
@@ -276,7 +276,7 @@
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent px-4" style="height: 47px;">
+                                    <select class="custom-select bg-transparent px-4" style="height: 47px;" id="service">
                                         <option selected>Select A Service</option>
                                         <option value="1">Service 1</option>
                                         <option value="2">Service 1</option>
@@ -285,7 +285,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Make Appointment</button>
+                                <input class="btn btn-primary btn-block" type="submit" style="height: 47px;">Make Appointment</input>
                             </div>
                         </div>
                     </form>

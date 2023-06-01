@@ -110,3 +110,26 @@
     
 })(jQuery);
 
+function make_appoinmnet()
+{
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+    var service = document.getElementById("service").value;
+
+    console.log("name:",name);
+    console.log("email:",email);
+    console.log("date:",date);
+    console.log("time:",time);
+    console.log("service",service);
+
+    var whatspp_url = "https://wa.me/+94715852085?text="
+                        +"Name :"+ name +"%0a"
+                        +"email :"+ email +"%0a"
+                        +"date :"+ date +"%0a"
+                        +"time :"+ time +"%0a"
+                        +"service :"+ service ;
+
+                        window.open(whatspp_url,'_blank').focus();
+}
