@@ -9707,5 +9707,15 @@ h6,
 .hover-color:hover{
   background-color: #F9A392;
   color:black;
-  ;
+  
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-container p {
+  margin-bottom: 1px;
+  align-content: left;
 }

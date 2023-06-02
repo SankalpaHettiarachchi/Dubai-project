@@ -87,13 +87,7 @@
             },
             576:{
                 items:2
-            },
-            768:{
-                items:3
-            },
-            992:{
-                items:4
-            },
+            }
         }
     });
 
@@ -109,6 +103,7 @@
     });
     
 })(jQuery);
+
 
 function make_appoinmnet()
 {
@@ -170,6 +165,4 @@ function Send_Email()
         alert("Please fill in all the required fields.");
     }
     
-
 }
-
