@@ -151,9 +151,9 @@ function Send_Email()
     if (name && email && subject && message)
     {
         Email.send({
-            SecureToken : "750c7b05-93eb-45ef-984d-4b6c8e1326fa",
-            To : 'Sankalpa.isurukala17@gmail.com',
-            From : 'Sankalpa.isurukala17@gmail.com',
+            SecureToken : "d29f9dbe-cc2d-4987-916b-e092cb01af4d",
+            To : 'ceyloniagentsspaclub@gmail.com',
+            From : 'ceyloniagentsspaclub@gmail.com',
             Subject : "Client Feed-Back",
             Body : body
         }).then(
