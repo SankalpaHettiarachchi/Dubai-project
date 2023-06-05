@@ -9724,3 +9724,24 @@ h6,
   height: 50px;
   margin-right: 10px;
 }
+
+#map {
+  position: relative;
+  padding-bottom: 56.25%; /* Set the aspect ratio for a 16:9 map */
+  height: 0;
+}
+
+#map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #map {
+    padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
+  }
+}
