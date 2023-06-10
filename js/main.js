@@ -166,5 +166,16 @@ function Send_Email()
     }
     
 }
+// -----------------------------Cache Settings----------------------------------
+// Get a reference to the image element
+// var welcomeImage = document.getElementById('welcomeImage');
 
+// // Set caching headers using JavaScript
+// welcomeImage.addEventListener('load', function() {
+//   var expires = new Date();
+//   expires.setDate(expires.getDate() + 7); // Set expiration date to 1 week from now
+//   var expiresString = expires.toUTCString();
+  
+//   document.cookie = 'welcomeImage=loaded;expires=' + expiresString + ';path=/';
+// });
 
