@@ -9742,6 +9742,7 @@ h6,
 /* Responsive styles */
 @media (max-width: 768px) {
   #map {
-    padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
   }
 }
