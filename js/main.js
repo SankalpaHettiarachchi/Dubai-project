@@ -107,35 +107,10 @@
 
 function make_appoinmnet()
 {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var date = document.getElementById("date").value;
-    var time = document.getElementById("time").value;
-    var service = document.getElementById("service").value;
-
-    console.log("name:",name);
-    console.log("email:",email);
-    console.log("date:",date);
-    console.log("time:",time);
-    console.log("service",service);
-
-    if (name && email && date && time && service)
-    {
-        var message = "Name: " + name + "\n" +
-              "Email: " + email + "\n" +
-              "Date: " + date + "\n" +
-              "Time: " + time + "\n" +
-              "Service: " + service;
+    var message = "Hellow Ceylonia"
 
         var whatsappURL = "https://api.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
         window.open(whatsappURL, '_blank');
-    }
-    else
-    {
-        alert("Please fill in all the required fields.");
-    }
-    
-
 }
 
 function Send_Email()
