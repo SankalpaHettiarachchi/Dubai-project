@@ -127,7 +127,7 @@ function make_appoinmnet()
               "Time: " + time + "\n" +
               "Service: " + service;
 
-        var whatsappURL = "https://web.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
+        var whatsappURL = "https://api.whatsapp.com/send?phone=+971565004506&text=" + encodeURIComponent(message);
         window.open(whatsappURL, '_blank');
     }
     else
