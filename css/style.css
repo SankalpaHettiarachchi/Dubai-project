@@ -9724,10 +9724,6 @@ h6,
   height: 50px;
   margin-right: 10px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 #map {
   position: relative;
   padding-bottom: 56.25%; /* Set the aspect ratio for a 16:9 map */
@@ -9743,7 +9739,43 @@ h6,
 }
 
 /* Responsive styles */
+@media (max-width: 320px) {
+  #map {
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
+  }
+}
+@media (max-width: 375px) {
+  #map {
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
+  }
+}
+@media (max-width: 425px) {
+  #map {
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
+  }
+}
 @media (max-width: 768px) {
+  #map {
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
+  }
+}
+@media (max-width: 1024px) {
+  #map {
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
+  }
+}
+@media (max-width: 1044px) {
+  #map {
+    padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
+
+  }
+}
+@media (max-width: 2560px) {
   #map {
     padding-bottom: 100%; /* Adjust the aspect ratio for smaller screens */
 
